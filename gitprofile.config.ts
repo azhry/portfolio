@@ -79,7 +79,7 @@ const CONFIG = {
   seo: {
     title: 'Portfolio of Azhary',
     description:
-      'I am a software engineer working on Lyrid PaaS and contributing to open source projects with expertise in Go, Kubernetes, and Next.js.',
+      'I am a software engineer working on Lyrid PaaS with expertise in Go, Kubernetes, and Next.js.',
     imageURL: '',
   },
   social: {
@@ -102,7 +102,7 @@ const CONFIG = {
     telegram: '',
     website: 'https://github.com/azhry',
     phone: '',
-    email: 'AARL7348@ext.amman.co.id',
+    email: 'azhary.arliansyah@gmail.com',
   },
   resume: {
     fileUrl: '', // Add your actual resume URL here if available
@@ -112,16 +112,10 @@ const CONFIG = {
     'Kubernetes',
     'Node.js',
     'Next.js',
-    'TypeScript',
     'Docker',
     'Git',
     'PostgreSQL',
     'MongoDB',
-    'gRPC',
-    'REST API',
-    'Helm',
-    'Kustomize',
-    'Terraform',
     'Python',
   ],
   experiences: [
@@ -133,11 +127,11 @@ const CONFIG = {
       companyLink: 'https://lyrid.io',
     },
     {
-      company: 'Eventori',
-      position: 'Backend Developer',
-      from: '2021',
+      company: 'FinAccel',
+      position: 'Fullstack Developer',
+      from: '2020',
       to: '2022',
-      companyLink: 'https://eventori.id',
+      companyLink: '',
     },
   ],
   certifications: [],
@@ -169,7 +163,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'business',
+    defaultTheme: 'light',
     disableSwitch: true,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
