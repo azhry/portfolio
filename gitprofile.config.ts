@@ -4,10 +4,10 @@ const CONFIG = {
   github: {
     username: 'azhry', // Your GitHub username
   },
-  base: '/portfolio',
+  base: '/',
   projects: {
     github: {
-      display: true,
+      display: false,
       header: 'GitHub Projects',
       mode: 'automatic',
       automatic: {
@@ -26,34 +26,67 @@ const CONFIG = {
       header: 'My Projects',
       projects: [
         {
-          title: 'Kubernetes Platform Manager',
+          title: 'Lyrid Platform',
           description:
-            'A backend platform that programmatically manages Kubernetes clusters using the Kubernetes SDK. Features automation for infrastructure and dev operations.',
+            'Developed multiple services for app.lyrid.io, a serverless platform to deploy and manage cloud-agnostic Kubernetes clusters.',
           imageUrl:
-            'https://cdn-icons-png.flaticon.com/512/919/919836.png',
-          link: 'https://github.com/azhry', // Replace with actual repo if available
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/lyrid.png',
+          link: 'https://app.lyrid.io',
         },
         {
-          title: 'React Dashboard for DevOps',
+          title: 'Lyrid CLI (LC)',
           description:
-            'Frontend dashboard built with React to visualize and manage Kubernetes-based applications and infrastructure in real time.',
+            'Contributed to Lyrid CLI, a command-line tool to deploy serverless applications on Lyrid platform.',
           imageUrl:
-            'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
-          link: 'https://github.com/azhry', // Replace with actual repo
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/cli.png',
+          link: 'https://www.npmjs.com/package/@lyrid/cli',
+        },
+        {
+          title: 'lc-static NPM Package',
+          description:
+            'Worked on lc-static package to simplify static app deployment in Lyrid ecosystem.',
+          imageUrl:
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/lc-static.png',
+          link: 'https://www.npmjs.com/package/@lyrid/lc-static',
+        },
+        {
+          title: 'Cluster API on OpenStack',
+          description:
+            'Built a proof-of-concept using Cluster API for provisioning Kubernetes clusters on Biznet Gio OpenStack infrastructure.',
+          imageUrl:
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/openstack.png',
+          link: 'https://github.com/azhry/openstack-cluster-api-poc',
+        },
+        {
+          title: 'Oracle Kubernetes Engine SDK (Go)',
+          description:
+            'Implemented PoC to manage Kubernetes clusters on Oracle Cloud Infrastructure using Go SDK.',
+          imageUrl:
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/oke.png',
+          link: 'https://github.com/azhry/oracle-kubernetes-sdk-poc',
+        },
+        {
+          title: 'Eventori',
+          description:
+            'Built the core backend of Eventori, an e-commerce platform for entertainment.',
+          imageUrl:
+            'https://raw.githubusercontent.com/azhry/azhry/main/assets/eventori.png',
+          link: 'https://eventori.id',
         },
       ],
     },
   },
   seo: {
-    title: 'Azhary’s Portfolio',
+    title: 'Portfolio of Azhary',
     description:
-      'Experienced in Go, C#, React, and Node.js. Building backend platforms and UIs to manage Kubernetes programmatically.',
+      'I am a software engineer working on Lyrid PaaS and contributing to open source projects with expertise in Go, Kubernetes, and Next.js.',
     imageURL: '',
   },
   social: {
-    linkedin: '', // Add your LinkedIn username
+    linkedin: '',
     x: '',
     mastodon: '',
+    researchGate: '',
     facebook: '',
     instagram: '',
     reddit: '',
@@ -67,59 +100,64 @@ const CONFIG = {
     stackoverflow: '',
     skype: '',
     telegram: '',
-    website: '',
+    website: 'https://github.com/azhry',
     phone: '',
-    email: '', // Add your email if you'd like
+    email: 'AARL7348@ext.amman.co.id',
   },
   resume: {
-    fileUrl: '', // Optional resume URL
+    fileUrl: '', // Add your actual resume URL here if available
   },
   skills: [
-    'Golang',
-    'C#',
-    'React.js',
-    'Node.js',
+    'Go',
     'Kubernetes',
-    'Docker',
-    'Helm',
+    'Node.js',
+    'Next.js',
     'TypeScript',
-    'Express.js',
-    'Minimal API (.NET)',
-    'MongoDB',
-    'PostgreSQL',
-    'Azure',
+    'Docker',
     'Git',
-    'CI/CD',
-    'Microservices',
-    'Tailwind CSS',
+    'PostgreSQL',
+    'MongoDB',
+    'gRPC',
+    'REST API',
+    'Helm',
+    'Kustomize',
+    'Terraform',
+    'Python',
   ],
   experiences: [
     {
-      company: 'Amman',
+      company: 'Lyrid Inc.',
       position: 'Software Engineer',
-      from: '2021',
+      from: '2022',
       to: 'Present',
-      companyLink: 'https://amman.co.id',
+      companyLink: 'https://lyrid.io',
+    },
+    {
+      company: 'Eventori',
+      position: 'Backend Developer',
+      from: '2021',
+      to: '2022',
+      companyLink: 'https://eventori.id',
     },
   ],
   certifications: [],
   educations: [
     {
-      institution: 'Universitas Indonesia',
+      institution: 'University of Indonesia',
       degree: "Master's in Computer Science",
-      from: '2022',
-      to: '2025',
+      from: '2024',
+      to: 'Current',
     },
     {
-      institution: 'Your Undergraduate Institution',
-      degree: 'Bachelor’s Degree',
-      from: '2015',
+      institution: 'Sriwijaya University',
+      degree: "Bachelor's in Computer Science",
+      from: '2014',
       to: '2019',
     },
   ],
-  publications: [], // Add if you want to showcase research
+  publications: [],
   blog: {
-    source: '', // dev | medium
+    source: '', // medium | dev
     username: '',
     limit: 2,
   },
@@ -131,38 +169,60 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
-    disableSwitch: false,
+    defaultTheme: 'business',
+    disableSwitch: true,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
       'light',
       'dark',
       'cupcake',
-      'lofi',
-      'dracula',
+      'bumblebee',
+      'emerald',
       'corporate',
       'synthwave',
       'retro',
       'cyberpunk',
+      'valentine',
+      'halloween',
+      'garden',
+      'forest',
+      'aqua',
+      'lofi',
+      'pastel',
+      'fantasy',
+      'wireframe',
+      'black',
+      'luxury',
+      'dracula',
+      'cmyk',
+      'autumn',
       'business',
+      'acid',
+      'lemonade',
+      'night',
+      'coffee',
+      'winter',
+      'dim',
       'nord',
+      'sunset',
+      'procyon',
     ],
     customTheme: {
-      primary: '#0ea5e9',
-      secondary: '#64748b',
-      accent: '#a3e635',
-      neutral: '#1e293b',
-      'base-100': '#f1f5f9',
-      '--rounded-box': '1rem',
-      '--rounded-btn': '1.5rem',
+      primary: '#fc055b',
+      secondary: '#219aaf',
+      accent: '#e8d03a',
+      neutral: '#2A2730',
+      'base-100': '#E3E3ED',
+      '--rounded-box': '3rem',
+      '--rounded-btn': '3rem',
     },
   },
-  footer: `Built with <a 
+  footer: `Made with <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> by Azhary`,
+    >GitProfile</a> and ❤️`,
   enablePWA: true,
 };
 
